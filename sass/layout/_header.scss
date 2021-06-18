@@ -38,10 +38,10 @@
   margin-left: auto;
 }
 
-.header-contacts-item {
+/*.header-contacts-item {
   &:not(:last-child) {
   }
-}
+} */
 
 .logo-link {
   font-family: "Raleway", sans-serif;
@@ -115,22 +115,17 @@
   margin-right: 30px;
 
   &:hover,
-&:focus {
-  color: var(--hover-color);
-}
+  &:focus {
+    color: var(--hover-color);
+  }
 }
 
 .header-contacts-tel-link {
-
   &:hover,
-&:focus {
-  color: var(--hover-color);
+  &:focus {
+    color: var(--hover-color);
+  }
 }
-
-}
-
-
-
 
 .header-contacts-icon {
   display: inline;
