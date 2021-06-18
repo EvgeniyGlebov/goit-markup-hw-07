@@ -4,10 +4,6 @@
   margin-bottom: 50px;
 }
 
-.portfolio-item:not(:last-child) {
-  margin-right: 8px;
-}
-
 .portfolio-photofilter-list {
   display: flex;
   flex-wrap: wrap;
@@ -53,13 +49,6 @@
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
 }
-.portfolio-item :hover,
-.portfolio-item:focus {
-  background-color: var(--hover-color);
-  color: #ffffff;
-  cursor: pointer;
-  box-shadow: 5px 5px 10px 1px #e5e5e5;
-}
 
 .photofilter-discription {
   padding-top: 20px;
@@ -79,6 +68,18 @@
   letter-spacing: 0.03em;
 
   color: var(--title-color);
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-color);
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px 1px #e5e5e5;
+  }
 }
 
 .portfolio-photofilter-list-title {
@@ -97,9 +98,11 @@
   color: var(--contacts-and-discriptions-color);
 }
 
-.portfolio-photofilter-list-item-photo:hover .portfolio-overlay,
-.portfolio-photofilter-list-item-photo:focus .portfolio-overlay {
-  transform: translateY(0%);
+.portfolio-photofilter-list-item-photo {
+  &:hover .portfolio-overlay,
+  &:focus .portfolio-overlay {
+    transform: translateY(0%);
+  }
 }
 
 .portfolio-overlay {

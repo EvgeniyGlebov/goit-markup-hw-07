@@ -27,9 +27,7 @@
   margin-bottom: 30px;
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
-  background-color: #188ce8;
+
 }
 .modal-btn {
   font-weight: 700;
@@ -55,4 +53,8 @@
   transition-property: background-color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
+
+  &hover,
+&focus {
+  background-color: #188ce8;
 }

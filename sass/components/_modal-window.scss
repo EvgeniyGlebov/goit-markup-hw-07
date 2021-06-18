@@ -33,11 +33,13 @@
   transition-timing-function: var(--transition-timing-function);
 }
 
-.modal-close-btn-svg:hover {
-  fill: var(--hover-color);
-}
+
 .modal-close-btn-svg {
   color: #000;
   width: 18px;
   height: 18px;
+
+  &:hover {
+  fill: var(--hover-color);
+}
 }

@@ -33,11 +33,13 @@
 .features-list-item {
   align-content: flex-start;
   width: 270px;
-}
 
-.features-list-item:not(:last-child) {
+  &:not(:last-child) {
   margin-right: 30px;
 }
+}
+
+
 
 .features-list-item-pictureContainer {
   display: flex;
